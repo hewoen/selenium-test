@@ -16,9 +16,9 @@ public class googleTest {
     public void test() throws InterruptedException {
         String path = "/usr/bin/geckodriver";
         System.setProperty("webdriver.gecko.driver", path);
-        FirefoxOptions options = new FirefoxOptions();
+        ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
-        WebDriver driver = new FirefoxDriver(options);
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://google.com");
         WebElement akzeptieren = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[3]/span/div/div/div/div[3]/div[1]/button[2]/div"));
         akzeptieren.click();
