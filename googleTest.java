@@ -14,7 +14,7 @@ public class googleTest {
 
     @Test
     public void test() throws InterruptedException {
-        String path = System.getProperty("user.dir") + "/" + "/usr/bin/geckodriver";
+        String path = "/usr/bin/geckodriver";
         System.setProperty("webdriver.gecko.driver", path);
         FirefoxOptions options = new FirefoxOptions();
         options.setHeadless(true);
