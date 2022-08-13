@@ -14,8 +14,8 @@ public class googleTest {
 
     @Test
     public void test() throws InterruptedException {
-        String path = "/usr/bin/geckodriver";
-        System.setProperty("webdriver.gecko.driver", path);
+        String path = "/usr/bin/chromedriver";
+        System.setProperty("webdriver.chrome.driver", path);
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
         WebDriver driver = new ChromeDriver(options);
