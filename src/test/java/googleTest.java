@@ -16,7 +16,7 @@ public class googleTest {
         String path = "/usr/bin/chromedriver";
         System.setProperty("webdriver.chrome.driver", path);
         ChromeOptions options = new ChromeOptions();
-        options.setHeadless(true);
+        //options.setHeadless(true);
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://google.com");
         WebElement akzeptieren = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[3]/span/div/div/div/div[3]/div[1]/button[2]/div"));
